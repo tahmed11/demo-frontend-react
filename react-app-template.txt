@@ -1,0 +1,9 @@
+only first time for react app:
+sudo npm i -g create-react-app@1.5.2
+
+to create the react app template for dev enviornment:
+create-react-app react-app
+
+
+to promote it to production run:
+npm run eject
