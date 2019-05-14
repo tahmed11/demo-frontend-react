@@ -6,7 +6,7 @@
 
 // GLOBALS
 
-var api_endpoint = "http://127.0.0.1:3000/";
+var api_endpoint = "https://wikipedia-map.now.sh/";
 
 
 
