@@ -5,5 +5,11 @@ to create the react app template for dev enviornment:
 create-react-app react-app
 
 
+to run the dev build
+npm run
+
+to start the app:
+npm start
+
 to promote it to production run:
 npm run eject
