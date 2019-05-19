@@ -46,7 +46,7 @@ const styles = theme => ({
     marginLeft: 32,
     paddingLeft: 24,
     [theme.breakpoints.up("md")]: {
-      paddingTop: "1.5em"
+      paddingTop: "1.1em"
     }
   },
   tagline: {
@@ -115,7 +115,7 @@ class Topbar extends Component {
     if (this.props.currentPath === "/search") {
       return 2;
     }
-    if (this.props.currentPath === "/initiate_scan") {
+    if (this.props.currentPath === "/request_a_scan") {
       return 3;
     }
     if (this.props.currentPath === "/about_us") {
@@ -124,9 +124,7 @@ class Topbar extends Component {
   };
 
   login(event) {
-    this.setState({
-      name: event.target.value
-    });
+    //this.setState({name: event.target.value});
     alert("Logged");
   }
 
@@ -206,7 +204,8 @@ class Topbar extends Component {
                     </Tabs>
                   </div>
                   <div className={classes.menuButton}>
-                    <Button color="primary" className={classes.button}>
+                    <Button color="primary" className={classes.button}
+                     onClick={this.login}>
                       Login
                     </Button>
                   </div>

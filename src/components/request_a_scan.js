@@ -5,7 +5,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import TextField from "@material-ui/core/TextField";
 
 import Topbar from "./Topbar";
 
@@ -25,7 +24,7 @@ const styles = theme => ({
     paddingBottom: 10
   },
   grid: {
-    width: 500,
+    width: 800,
     margin: `0 ${theme.spacing.unit * 2}px`,
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 20px)"
@@ -36,7 +35,7 @@ const styles = theme => ({
   },
   paper: {
     padding: theme.spacing.unit * 3,
-    textAlign: "left",
+    textAlign: "center",
     color: theme.palette.text.secondary
   },
   rangeLabel: {
@@ -83,24 +82,10 @@ const styles = theme => ({
   }
 });
 
-class Search extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true
-    };
-    this.onSearch = this._onSearch.bind(this);
-  }
-
-  _onSearch = (event, value) => {
-    this.setState({ search_value: value });
-    alert("Target searching " + this.state.value);
-  };
-
+class requestascan extends Component {
   render() {
     const { classes } = this.props;
     const currentPath = this.props.location.pathname;
-    const { search_value } = this.state;
     return (
       <React.Fragment>
         <CssBaseline />
@@ -115,24 +100,20 @@ class Search extends Component {
               className={classes.grid}
             >
               <Grid item xs={12}>
-                <div className={classes.topBar}>
-                  <div className={classes.block}>
-                    <Typography color="secondary" variant="h5" gutterBottom justify="left">
-                      Target
+                <Paper
+                  className={classes.paper}
+                  justify="center"
+                  alignItems="center"
+                >
+                  <div className={classes.box}>
+                    <Typography color="secondary" variant="h5" gutterBottom>
+                      Coming Soon
                     </Typography>
-                    <form onSubmit={this.onSearch}>
-                      <TextField
-                        id="standard-search"
-                        label="example.com"
-                        type="search"
-                        className={classes.textField}
-                        margin="normal"
-                        justify="center"
-                        value={this.state.search_value}
-                      />
-                    </form>
+                    <Typography variant="inherit" gutterBottom>
+                      We are trying to add functionality for people to initiate a scan from the portal. 
+                    </Typography>
                   </div>
-                </div>
+                </Paper>
               </Grid>
             </Grid>
           </Grid>
@@ -142,4 +123,4 @@ class Search extends Component {
   }
 }
 
-export default withRouter(withStyles(styles)(Search));
+export default withRouter(withStyles(styles)(requestascan));

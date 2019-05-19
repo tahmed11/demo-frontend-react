@@ -12,12 +12,12 @@ const Menu = [
     pathname: "/search"
   },
   {
-    label: "Initiate scan",
-    pathname: "/wizard"
+    label: "Request a scan",
+    pathname: "/request_a_scan"
   },
   {
     label: "About Us",
-    pathname: "/cards"
+    pathname: "/about_us"
   }
 
 ];
