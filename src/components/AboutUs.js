@@ -113,12 +113,12 @@ class AboutUs extends Component {
                       Blackhawk is reconnaissance site to visualize a target
                       infrastructure and assets. Blackhawk uses OSINT techniques to find a target's assets (websites, hosts, DNS, IP, ports, etc). More features such as target's github repos, mobile applications will be added in the future.  It's useful for red teamers, pentesters or
                       bug hunters to map their target's assets. 
-                      </Typography>
-                      <Typography variant="inherit" gutterBottom>
-                      Blackhawk only perform
+                      <br/> 
+                      <b>Blackhawk only perform
                       reconnaissance on the target's infrastructure and no
-                      active scanning or exploitation of any sort is performed.
-                    </Typography>
+                      active scanning or exploitation of any sort is performed.</b>
+                      </Typography>
+                     
                   </div>
                 </Paper>
               </Grid>
