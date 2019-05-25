@@ -17,8 +17,10 @@ WORKDIR /blackhawk-frontend
 RUN npm init -y
 RUN npm install
 
+#only first time for react app:
+RUN npm i -g create-react-app@1.5.2
 #Copying enviornment variables from input.env to .env
-RUN mv input.env .env
+#RUN mv input.env .env
 RUN chmod 755 start.sh
 
 RUN groupadd -g 999 nonprivuser && \
@@ -26,4 +28,4 @@ useradd -r -u 999 -g nonprivuser nonprivuser
 USER nonprivuser
 
 EXPOSE 3000
-CMD ["/bin/bash", "/auth-frontend/start.sh"]
+CMD ["/bin/bash", "/blackhawk-frontend/start.sh"]
