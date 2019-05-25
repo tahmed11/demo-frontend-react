@@ -10,5 +10,8 @@
 dev
 # Don't include shared user graphs
 graphs/*.json
-
+#dont includes node libraries
 node_modules
+
+.vscode
+
