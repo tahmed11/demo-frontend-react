@@ -6,11 +6,8 @@
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^3.0.0-alpha.30",
-<<<<<<< HEAD
     "clipboard": "^2.0.4",
-=======
     "create-react-app": "^3.0.1",
->>>>>>> c9a814ce8da0501f74a6f5eb255c48adc65cac5b
     "gh-pages": "^2.0.1",
     "numeral": "^2.0.6",
     "query-string": "^6.5.0",
@@ -22,12 +19,9 @@
     "react-swipeable-views": "^0.13.3",
     "react-swipeable-views-utils": "^0.13.3",
     "recharts": "^1.6.0",
-<<<<<<< HEAD
-    "vis": "^4.21.0"
-=======
+    "vis": "^4.21.0",
     "typescript": "^3.4.5",
     "webpack": "4.29.6"
->>>>>>> c9a814ce8da0501f74a6f5eb255c48adc65cac5b
   },
   "scripts": {
     "start": "react-scripts start",
