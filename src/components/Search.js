@@ -5,8 +5,8 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
-
 import Topbar from "./Topbar";
+import Vis from "./react-vis";
 
 const numeral = require("numeral");
 numeral.defaultFormat("0,000");
@@ -99,7 +99,8 @@ class Search extends Component {
   render() {
     const { classes } = this.props;
     const currentPath = this.props.location.pathname;
-    const { search_value } = this.state;
+   // const { search_value } = this.state;
+
     return (
       <React.Fragment>
         <CssBaseline />
@@ -113,10 +114,15 @@ class Search extends Component {
               container
               className={classes.grid}
             >
-              <Grid item xs={12}>
+              <Grid item xs={8}>
                 <div className={classes.topBar}>
                   <div className={classes.block}>
-                    <Typography color="secondary" variant="h5" gutterBottom justify="left">
+                    <Typography
+                      color="secondary"
+                      variant="h5"
+                      gutterBottom
+                      justify="left"
+                    >
                       Target
                     </Typography>
                     <form onSubmit={this.onSearch}>
@@ -134,8 +140,14 @@ class Search extends Component {
                 </div>
               </Grid>
             </Grid>
+           
           </Grid>
-        </div>
+          
+           
+          </div>
+          
+          <Vis />
+         
       </React.Fragment>
     );
   }
